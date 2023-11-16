@@ -28,9 +28,7 @@ shareButton.addEventListener("click", async () => {
   try {
     if (navigator.share) {
       await navigator.share({
-        title: "Compoundle Challenge",
-        text: `Woohoo! I am sharing this!\n Here was my pathway today! ${emojiString}`,
-        url: window.location.href,
+        text: `Woohoo! Click here: ${compoundleLink}! I beat today's Compoundle and I can share it! ${emojiString}`,
       });
     } else {
       alert("Coming soon!");
