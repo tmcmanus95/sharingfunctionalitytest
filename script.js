@@ -25,6 +25,7 @@ shareButton.addEventListener("click", async () => {
 
   console.log("I am in the share button:", emojiString);
 
+  let compoundleLink = window.location.href;
   try {
     if (navigator.share) {
       await navigator.share({
